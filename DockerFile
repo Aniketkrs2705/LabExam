@@ -1,0 +1,20 @@
+FROM openjdk:17-jdk-alpine
+
+WORKDIR /app
+
+COPY . /app
+
+RUN javac OddNumber.java
+
+CMD ["java", "OddNumber"]
+
+
+
+
+FROM openjdk:17-jdk-alpine
+
+WORKDIR /app
+
+COPY . /app
+
+
